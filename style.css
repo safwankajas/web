@@ -1,107 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family&family=Bebas+Neue=Rancho:wght@300&display=swap');
 *
 {
     margin: 0;
     padding: 0;
-}
-header
-{
-    background-image: linear-gradient(rgba(204, 143, 72, 0.233),rgba(0, 0, 0, 0.205)),url(pic4.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
-.hero
-{
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    text-align: center;
-}
-h1
-{
-    font-size:40px;
-    letter-spacing: 10px;
-    font-family: 'Poppins', sans-serif;   
-}
-hr
-{
-    width: 50%;
-    margin: 30px auto;
-    border: .2px solid;
-
-}
-h6 
-{
-   
-    font-size: 9px;
-    letter-spacing: 7px;
-    font-family: 'Poppins', sans-serif; 
-    color: rgba(243, 156, 106, 0.808);
-}
-.social
-{
-    top: 90%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    text-align: center;
-    display: flex;
-
-}
-.social a
-{
-    width: 50px;
-    height: 50px;
-    text-align: center;
     text-decoration: none;
-    color: #000;
-    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.05);
-    margin: 0 30px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s;}
-.social a .fab
+    box-sizing: border-box;
+    font-size: 1rem;
+   
+}
+body
 {
-    font-size: 30px;
-    line-height: 50px;
-    position: relative;
-    z-index: 10;
-    transition: color 0.5s;
+    background: #1d2512;
+}
+.max-width
+{
+    max-width: 1300px;
+    padding: 0  20px;
+    margin: auto;
+}
+.navabar
+{
+    background: #CFD11A;
+    position: fixed;
+    padding: 15px 0 ;
+    width: 100%;
+    font-family: "Ubuntu",sans-serif;
+    transition: all 0.3s ease;
+
+}
+.navabar.sticky
+{
+    padding: 15px 0;
+    background: #181d12b0;
+
+}
+.navabar .max-width
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     
 }
-.social a::after
+.navabar .log a
 {
-    content: '';
-    width: 80px;
-    height: 80px;
-    top: -90px;
-    left: 0;
-    background:linear-gradient(-45deg,#900C3F,#FFC300);
-    position: absolute;
-    transition: 0.5s;
+    color: rgb(17, 17, 17);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+   letter-spacing: -0.05em;
+    
 }
-.social a:hover::after
+.navabar.sticky a {
+    color: crimson;
+}
+.navabar .menu li
 {
-    top: 0;
+    list-style: none;
+    display: inline-block;
+}
+.navabar .menu li a
+{
+    color:#000;
+    padding: 0 5px;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-left: 30px;
+    transform: color 0.3s ease;
+}
+.navabar .menu li a:hover
+{
+    
+    color: #fff;
+
+
 
 }
-.social a:hover .fab
+.navabar.sticky .menu li a
 {
     color: #fff;
 }
-.social a:hover
+
+.navabar.sticky .menu li a:hover
 {
-    transform: translateY(-10px);
+    color: crimson;
+    
+} 
+.menu-btn
+{
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
-
-h7
+.navabar.sticky .menu-btn
 {
-    font-size:10px;
-    letter-spacing: 5px;
-    font-family: 'Poppins', sans-serif;   
+    color: crimson;
+    
+}
+.home
+{
+    display: flex;
+    background:#1d2512;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: "ubuntu", sans-serif;
+
+}
+.home .max-width
+{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1
+{
+    font-size: 2rem;
+}
+.home .home-content .text-2
+{
+    font-size: 4em;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3 
+{
+    font-size: 3em;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span
+{
+    font-size: 3rem;
+    color: crimson;
+    font-weight: 500;
+}
+@media (max-width:1104px)
+{
+    .home .max-width
+    {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:720px){
+    .max-width
+{
+    padding: 0  50px;
+
+}
+.menu-btn
+{
+    display: block;
+    z-index: 999;
+}
+.menu-btn i.active::before
+{
+ content: "\f00d";   
+ color: #fff;
+}
+.navabar .menu
+{
+    position: fixed;
+    height: 100vh;
+    width: 70%;
+    right: -100%;
+    top: 0;
+    
+    background: #181d12f1;
+    text-align: center;
+    padding-top: 100px;
+    transition: all 0.5s ease;
+    
+}
+.navabar .menu.active
+{
+    right: 0;
+}
+.navabar .menu li
+ {
+     display: block;
+   
+     
+ }
+ .navabar .menu li a 
+ {
+    display: inline-block;
+    margin: 20px 0;
+    color: #fff;
+   
+    font-size: 1.3em;
+}
+.home .home-content .text-1
+{
+    font-size: 2rem;
+}
+.home .home-content .text-2
+{
+    font-size: 3.5em;
+   
+}
+.home .home-content .text-3 
+{  
+    font-size: 2rem;
+    
+}
+.home .home-content .text-3 span
+{
+    font-size: 2rem;
+   
+}
+@media (max-width:460px){
+.home .home-content .text-1
+{
+    font-size: 1.5rem;
+}
+
+    .home .home-content .text-2
+{
+    font-size: 2.6em;
+}
+    .home .home-content .text-3 
+{  
+    font-size: 1.5rem;
+    
+}
+.home .home-content .text-3 span
+{
+    font-size: 1.5rem;
+}
+}
 }
