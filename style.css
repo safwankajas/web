@@ -10,9 +10,9 @@
     
    
 }
-body
+html
 {
-    background: #1d2512;
+    scroll-behavior: smooth;
 }
 span
 {
@@ -21,7 +21,7 @@ span
 }
 .max-width
 {
-    max-width: 1300px;
+    max-width: 1000px;
     padding: 0  20px;
     margin: auto;
 }
@@ -74,7 +74,7 @@ span
     padding: 0 5px;
     font-size: 1.4em;
     font-weight: 500;
-    margin-left: 30px;
+    margin-left: 20px;
     transform: color 0.3s ease;
 }
 .navabar .menu li a:hover
@@ -177,9 +177,14 @@ section
 {
     padding: 100px 0;
 }
+.about ,.service ,.skill ,.team ,.contact,footer
+{
+    font-family: 'poppins',sans-serif;
+}
 .about .about-content,
 .service .service-content,
-.skill .skill-content
+.skill .skill-content,
+.contact .contact-content
 {
     display: flex;
     flex-wrap: wrap;
@@ -519,6 +524,155 @@ text-align: justify;
     background: crimson!important;
     
 }
+/* contact --------------- section */
+
+.contact 
+{
+    background: #fff;
+}
+.contact .tittle::after
+{
+    content: "get in touch";
+}
+.contact .contact-content .column
+{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p
+{
+    text-align: justify;
+}
+.contact .contact-content .left .icons
+{
+    margin: 10px 0;
+}
+.contact .contact-content .row
+{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info
+{
+    margin-left: 30px;
+}
+.contact .contact-content .row i
+{
+   color: crimson;
+   font-size: 20px;
+}
+.contact .contact-content  .info .head
+{
+    font-weight: 600;
+}
+.contact .contact-content  .info  .subtiittle
+{
+    color: #333;
+}
+.contact  .right form .fields
+{
+    display: flex;
+}
+.contact  .right form .field,
+.contact  .right form .fields .field
+{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact  .right form .textarea
+{
+    height: 80px;
+    width: 100%;
+}
+.contact  .right form  .name
+{
+    margin-right: 10px;
+}
+.contact  .right form  .mail
+{
+    margin-left: 10px;
+}
+.contact  .right form .field input,
+.contact  .right form .textarea textarea
+
+{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family:'poppins',sans-serif ;
+}
+.contact  .right form .textarea textarea
+{
+    padding-top: 10px;
+    resize: none;
+}
+.contact  .right form .button
+{
+    height: 47px;
+    width: 170px;
+}
+.contact  .right form .button button
+{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #1d2512 ;
+    background: #1d2512;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.contact  .right form .button button:hover
+{
+    color: #000;
+    background: none;
+}
+
+/* footer ----------------------section */
+
+footer{
+    background:#1d2512 ;
+    padding: 15px 18px;
+    text-align: center;
+    
+}
+footer span
+{
+    color: #fff;
+    font-size: 15px;
+}
+footer span a{
+    color:crimson;
+    font-size: 15px;
+    text-decoration: none;
+}
+footer span a:hover{
+
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
 
 /* content -- section--*/
 @media (max-width:1300px)
@@ -645,14 +799,16 @@ text-align: justify;
 }
 
 .service .service-content .card,
-
-
-
+.team .carousel .card
 {
     width: calc(50% - 10px);
     margin-bottom: 20px;
 }
-
+.contact .contact-content .column
+{
+    width: 100%;
+    margin-bottom: 35px;
+}
 }
 @media (max-width:620px){
     .max-width

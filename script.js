@@ -14,6 +14,23 @@ $(document).ready(function(){
          $('.navabar .menu').toggleClass("active");
          $('.menu-btn i').toggleClass("active");
     });
+    // typing ----------aninimation
+    var typed = new Typed(".typ",{
+        strings: ["Developer","Freelancer","Blogger","Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    });
+    var typed = new Typed(".typ2",{
+        strings: ["Developer","Freelancer","Blogger","Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    });
+
+
     $('.carousel').owlCarousel({
 
         margin:20,
@@ -26,7 +43,7 @@ $(document).ready(function(){
                 items:1,
                 nav: false
             },
-             600:{
+             720:{
                 items:2,
                 nav: false
             },
