@@ -17,7 +17,7 @@ html
 span
 {
     font-size: 25px;
-    color: crimson;
+    color: #a80404;
 }
 .max-width
 {
@@ -60,7 +60,7 @@ span
     
 }
 .navabar.sticky a {
-    color: crimson;
+    color: #a80404;
 }
 
 .navabar .menu li
@@ -80,19 +80,19 @@ span
 .navabar .menu li a:hover
 {
     
-    color: #fff;
+    color: rgb(255, 255, 255);
 
 
 
 }
 .navabar.sticky .menu li a
 {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .navabar.sticky .menu li a:hover
 {
-    color: crimson;
+    color: #a80404;
     
 } 
 .menu-btn
@@ -105,25 +105,44 @@ span
 
 .navabar.sticky .menu-btn
 {
-    color: crimson;
+    color: #a80404;
     
 }
+.text {
+    font-weight: 100;
+    font-size: 28px;
+    color: #FAFAFA;
+  }
+  
+  .dud {
+    color: #757575;
+  }
 
 .home
 {
     display: flex;
-    background:#1d2512;
+    background:#101418;
     height: 100vh;
     width: 100%;
     object-fit: cover;
-    color: #fff;
+    color: rgb(255, 255, 255);
     min-height: 500px;
     font-family: "ubuntu", sans-serif;
+    object-fit: cover;
+    opacity: 1;
 
+}
+.home video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 }
 .home .max-width
 {
     margin: auto 0 auto 40px;
+    z-index: 10;
 }
 .home .home-content .text-1
 {
@@ -143,7 +162,7 @@ span
 .home .home-content .text-3 span
 {
     font-size: 3rem;
-    color: crimson;
+    color: #a80404;
     font-weight: 500;
 }
 .home .home-content a
@@ -151,7 +170,7 @@ span
     display: inline-block;
     background: #CFD11A;
     text-decoration: none;
-    color: #1d2512;
+    color: #111519;
     font-size: 1.2rem;
     padding: 12px 36px;
     margin-top: 20px;
@@ -161,13 +180,13 @@ span
 }
 .home.sticky .home-content a
 {
-    background: crimson;
-    border: 2px solid crimson;
-    color: #fff;
+    background: #a80404;
+    border: 2px solid #a80404;
+    color: rgb(255, 255, 255);
 }
 .home .home-content a:hover
 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     background: none;
 }
 
@@ -196,7 +215,7 @@ section
 .about
 {
     
-    background: #fff;
+    background: rgb(255, 255, 255);
 
 }
 section .tittle
@@ -227,8 +246,8 @@ section .tittle::after
     left: 50%;
     padding: 3px;
     font-size: 20px;
-    color: crimson;
-    background: #fff;
+    color: #a80404;
+    background: rgb(255, 255, 255);
     transform: translateX(-50%);
 }
 .about .tittle::after
@@ -264,9 +283,9 @@ text-align: justify;
 .about .about-content .right a
 {
     display: inline-block;
-    background: #1d2512;
+    background: #111519;
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
@@ -277,28 +296,28 @@ text-align: justify;
 }
 .about .about-content .right a:hover
 {
-    color: #1d2512;
+    color: #111519;
     
     background: none;
 }
 /* Service -- section--*/
 .service,.team
 {
-    background: #1d2512;
-    color: #fff;
+    background: #111519;
+    color: rgb(255, 255, 255);
     
 }
 .service .tittle::before,
 .team .tittle::before
 {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 .service .tittle::after,
 .team .tittle::after
 {
     content: "what i provide";
-    background: #1d2512;
-    color: crimson;
+    background: #111519;
+    color: #a80404;
     font-weight: 300;
     font-family: "ubuntu",sans-serif;
 }
@@ -317,12 +336,12 @@ text-align: justify;
 .service .service-content .card i
 {
     font-size: 50px;
-    color: crimson;
+    color: #a80404;
     transition: color 0.3s ease;
 }
 .service .service-content .card:hover i
 {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 .service .service-content .card .text
 {
@@ -337,7 +356,7 @@ text-align: justify;
 }
 .service .service-content .card:hover
 {
-    background: crimson;
+    background: #a80404;
 }
 .service .service-content .box
 {
@@ -351,7 +370,7 @@ text-align: justify;
 /*skills  section styling*/
 .skill
 {
-    background: #fff;
+    background: rgb(255, 255, 255);
 }
 .skill .tittle::after
 {
@@ -368,9 +387,9 @@ text-align: justify;
 .skill .skill-content .left a
 {
     display: inline-block;
-    background: #1d2512;
+    background: #111519;
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     padding: 8px 16px;
     margin-top: 20px;
@@ -422,7 +441,7 @@ text-align: justify;
  height: 100%;
  left: 0;
  top: 0;
- background: crimson;
+ background: #a80404;
 
 }
 .skill-content .right .html::before
@@ -461,7 +480,7 @@ text-align: justify;
 }
 .team .carousel .card:hover
 {
-    background: crimson;
+    background: #a80404;
 }
 .team .carousel .card .box
 {
@@ -490,12 +509,12 @@ text-align: justify;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #a80404;
 
 }
 .team .carousel .card:hover img
 {
-    border-color: #fff;
+    border-color: rgb(255, 255, 255);
     transition: all 0.3s ease;
 
 }
@@ -512,7 +531,7 @@ text-align: justify;
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #a80404!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -521,14 +540,14 @@ text-align: justify;
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: #a80404!important;
     
 }
 /* contact --------------- section */
 
 .contact 
 {
-    background: #fff;
+    background: rgb(255, 255, 255);
 }
 .contact .tittle::after
 {
@@ -564,7 +583,7 @@ text-align: justify;
 }
 .contact .contact-content .row i
 {
-   color: crimson;
+   color: #a80404;
    font-size: 20px;
 }
 .contact .contact-content  .info .head
@@ -626,9 +645,9 @@ text-align: justify;
 {
     width: 100%;
     height: 100%;
-    border: 2px solid #1d2512 ;
-    background: #1d2512;
-    color: #fff;
+    border: 2px solid #111519 ;
+    background: #111519;
+    color: rgb(255, 255, 255);
     border-radius: 6px;
     font-size: 18px;
     font-weight: 500;
@@ -645,18 +664,18 @@ text-align: justify;
 /* footer ----------------------section */
 
 footer{
-    background:#1d2512 ;
+    background:#111519 ;
     padding: 15px 18px;
     text-align: center;
     
 }
 footer span
 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 15px;
 }
 footer span a{
-    color:crimson;
+    color:#a80404;
     font-size: 15px;
     text-decoration: none;
 }
@@ -737,7 +756,7 @@ footer span a:hover{
 .menu-btn i.active::before
 {
  content: "\f00d";   
- color: #fff;
+ color: rgb(255, 255, 255);
 }
 .navabar .menu
 {
@@ -767,20 +786,27 @@ footer span a:hover{
  {
     display: inline-block;
     margin: 20px 0;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 12px 36px;
     margin-top: 0px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgb(255, 255, 255);
     font-size: 1.3em;
     transition: all .3s ease;
 }
 .navabar .menu li a:hover
 {
-    color: crimson;
+    color: #a80404;
 }
+
 .home .home-content .text-1
 {
     font-size: 2rem;
+    margin-top: 420px;
+}
+.home video{
+   margin-top: -80px;
+    transform: scale(.9);
+
 }
 .home .home-content .text-2
 {
@@ -795,7 +821,11 @@ footer span a:hover{
 .home .home-content .text-3 span
 {
     font-size: 2rem;
+    
    
+}
+.home .home-content a{
+    margin-top: -170px;
 }
 
 .service .service-content .card,

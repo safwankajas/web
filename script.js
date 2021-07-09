@@ -15,15 +15,9 @@ $(document).ready(function(){
          $('.menu-btn i').toggleClass("active");
     });
     // typing ----------aninimation
+    
     var typed = new Typed(".typ",{
-        strings: ["Developer","Freelancer","Blogger","Designer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-
-    });
-    var typed = new Typed(".typ2",{
-        strings: ["Developer","Freelancer","Blogger","Designer"],
+        strings: ["Developer","Editor","Designer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
