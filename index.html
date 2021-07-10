@@ -9,6 +9,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <!-- -----------------div animation-------------------- -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- ----------------------------------------------------------- -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100">
         <script src="./index.js" async></script>
@@ -17,7 +22,7 @@
     <body>
       <nav class="navabar">
           <div class="max-width">
-              <div class="log "><a href="#">SAFWAN</a></div>
+              <div class="log " data-aos="zoom-in"><a href="#">SAFWAN</a></div>
               <ul class="menu">
                   <li><a href="#home">Home </a></li>
                   <li><a href="#about">About</a></li>
@@ -28,7 +33,7 @@
 
 
               </ul>
-              <div class="menu-btn">
+              <div class="menu-btn"  data-aos="zoom-in">
                 <i class="fas fa-bars"></i>
               </div>
           </div>
@@ -38,38 +43,53 @@
         <video src="Black Video_1.mp4" muted loop autoplay></video>
           <div class="max-width">
               <div class="home-content">
-                  <div class="text-1">Hello my name is</div>
-                  <div class="text-2">Safwan Kajas</div>
-                  <div class="text-3">And I'm a <span class="typ"></span></div>
+                  <div class="text-1"  data-aos="zoom-in">Hello my name is</div>
+                  <div class="text-2"  data-aos="zoom-in">Safwan Kajas</div>
+                  <div class="text-3"  data-aos="zoom-in">And I'm a <span class="typ"></span></div>
                  
               </div>
           </div>
 
       </section>
 <!-- about section-->
+<script>
+    AOS.init();
+  </script>
 
-
-<!-- <section class="about" id="about">
+<section class="about" id="about">
           <div class="max-width"> 
-              <h2 class="tittle">
-                  About me
+              <h2  class="tittle" data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
+                  About
               </h2>
+              <div   class="abt" >
+                <img  src="crct.png" alt="kajas" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+              </div>
               <div class="about-content">
                 <div class="column left">
-                  <img src="kajas.jpg" alt="kajas">  
+                    <!-- <img src="gr.png" alt="kajas">   -->
                 </div>
                 <div class="column right">
-                 <div class="text">I'm  safwan kajas a <span class="typ2"></span></div>
-                    <p>Complete Responsive Personal Portfolio Website using HTML CSS & JavaScript
+                 <div class="text" data-aos="fade-up"
+                 data-aos-anchor-placement="center-bottom">I'm  safwan kajas a <span class="typ2"></span></div>
+                    <p data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"> self taught designer with experience in
 
-                        In this video, I have shown you how to create a complete responsive portfolio website using html css and javascript. You can watch this video and easily able to create this type of responsive portfolio website even if you're a beginner. 
-                      </p>  
-                     
-                        <a href="#">Download cv</a>
+                    creating digital interfaces, websites, and print design but I also have the ability to bring those concepts to life through creative front-end development.
+                      </p>
+                      <div class="links" data-aos="fade-up" data-aos-anchor-placement="center-bottom">  
+                      <a href="https://www.instagram.com/safwankajas/"><i class="fab fa-instagram"></i></a> 
+                      <a href="https://www.linkedin.com/in/safwan-k-b6a699202/"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100003221146387"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://chatwith.io/s/hai-3"><i class="fab fa-whatsapp" ></i></a>
+                    </div>
+                        
                 </div>
               </div>
           </div>
-          </section> -->
+          
+          </section> 
 
 
           <!-- service  section-->
