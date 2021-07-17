@@ -7,9 +7,10 @@
     box-sizing: border-box;
     font-size: 1rem;
     font-family: "Ubuntu",sans-serif;
-    
+   
    
 }
+
 html
 {
     scroll-behavior: smooth;
@@ -284,10 +285,57 @@ text-align: justify;
     color: #a80404; 
     background: none;
 }
+/* -----------------munnar--------------- */
+
+.munnar
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #101418;
+   align-items: center;
+}
+.munnar img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+.munnar .muntit{
+    position: absolute;
+    margin-top: -300px;
+    font-size: 60px;
+    color: #FAFAFA;
+    letter-spacing: 5px;
+    left: 50%;
+    
+}
+.munnar  a{
+    position: absolute;
+    left: 55%;
+    margin-top: -220px;
+    font-size: 25px;
+    color: #f7f7f5;
+    background: #a80404c2;
+    border-radius:5px ;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.munnar  a:hover
+{
+    border: 2px solid #a80404;
+    background: none;
+}
+.he
+{
+    font-size: 10vw;
+    color: #f7f7f5;
+    text-align: center;
+}
 /* Service -- section--*/
 .service,.team
 {
-    background: #111519;
+   
     color: rgb(255, 255, 255);
     
 }
@@ -754,7 +802,7 @@ footer span a:hover{
     right: -100%;
     top: 0;
     
-    background: #181d12f1;
+    background: #101418c4;
     text-align: center;
     padding-top: 100px;
     transition: all 0.3s ease;
@@ -886,6 +934,10 @@ section .tittle
 {
     font-size: 1.5rem;
 }
+.munnar img
+{
+    width: 100%;
+}
 .service .service-content .card,
 .skill .skill-content .column,
 .team .carousel .card
@@ -894,6 +946,21 @@ section .tittle
     
     width: 70%;
     margin: 40px;
+}
+.munnar .muntit{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 10vw;
+   
+    left: 30px;
+    
+}
+.munnar  a{
+    position: absolute;
+    left: 30px;
+    margin-top: 70px;
+    font-size: 3vw;
+    
 }
 }
 
